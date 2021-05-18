@@ -1,0 +1,20 @@
+sudo apt-get update
+sudo apt-get install python3
+
+sudo apt install python3-pip
+Y
+pip3 install flask
+
+sudo apt-get install nginx
+Y
+sudo apt install gunicorn
+Y
+
+sudo systemctl start nginx
+sudo systemctl enable nginx
+
+mkdir flask-app
+cd flask-app
+vim app.py
+
+https://github.com/evans123456/ec2Flask.git
