@@ -5,8 +5,8 @@ After=network.target
 [Service]
 User=ubuntu
 Group=www-data
-WorkingDirectory=/home/ubuntu/helloworld
-ExecStart=/home/ubuntu/helloworld/venv/bin/gunicorn -b localhost:8000 app:app
+WorkingDirectory=/home/ubuntu/ec2Flask
+ExecStart=/home/ubuntu/ec2Flask/myenv/bin/gunicorn -b localhost:8000 app:app
 Restart=always
 
 [Install]
