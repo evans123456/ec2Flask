@@ -1,4 +1,4 @@
-from ec2Flask import app
+from . import app
 
 if __name__ == "__main__":
     app.run()
